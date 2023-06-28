@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
 </head>
 <body>
   <div id="app"></div>
@@ -28,5 +29,18 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> 
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'aa6641b1fa438ae6fd35',
+      clientSecret: '888af859fe4f3f80782bfaa1621da14d43c7ec81',
+      repo: 'orchidnote',
+      owner: 'iwinder',
+      admin: ['iwinder'],
+      distractionFreeMode: false,
+      id: decodeURI(window.location.pathname),
+    })
+  </script>
 </body>
 </html>

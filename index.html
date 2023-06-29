@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>萦兰公众号资源库</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+  <link rel="stylesheet" href="//gcore.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//gcore.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '萦兰资源库',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      relativePath: true,
+      notFoundPage: true,
+      notFoundPage: "my404.md",
+      // routerMode: 'history',
+      search: {
+        paths: "auto",
+        placeholder: "搜索一下",
+        noData: "找不到结果",
+        depth: 5
+		  },
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//gcore.jsdelivr.net/npm/docsify@4"></script> 
+  <script src="//unpkg.com/browse/docsify/lib/plugins/search.js"></script>
+  <script src="//gcore.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//gcore.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//gcore.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'aa6641b1fa438ae6fd35',
+      clientSecret: '888af859fe4f3f80782bfaa1621da14d43c7ec81',
+      repo: 'orchidnote',
+      owner: 'iwinder',
+      admin: ['iwinder'],
+      distractionFreeMode: false,
+      id: decodeURI(window.location.pathname),
+    })
+  </script>
+</body>
+</html>
